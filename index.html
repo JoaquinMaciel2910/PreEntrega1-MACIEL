@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1>Piedra, Papel o Tijera</h1>
+    <label for="playerName">Nombre del jugador:</label>
+    <input class="namePlayer" type="text" id="playerName">
+    <div class="game">
+        <button class="choice" onclick="play('piedra')">Piedra</button>
+        <button class="choice" onclick="play('papel')">Papel</button>
+        <button class="choice" onclick="play('tijera')">Tijera</button>
+    </div>
+    <div id="result"></div>
 
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
